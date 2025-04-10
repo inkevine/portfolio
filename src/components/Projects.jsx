@@ -1,8 +1,15 @@
 import React from 'react';
-import masizi from '../images/masizi.mp4';
-import td from '../images/TekaDrop.mp4';
-import tyun from '../images/tyun.mp4';
-import fig from '../images/fig.mp4';
+import masiziMp4 from '../images/masizi.mp4';
+import masiziWebm from '../images/masizi.webm';
+
+import tdMp4 from '../images/TekaDrop.mp4';
+import tdWebm from '../images/TekaDrop.webm';
+
+import tyunMp4 from '../images/tyun.mp4';
+import tyunWebm from '../images/tyun.webm';
+
+import figMp4 from '../images/fig.mp4';
+import figWebm from '../images/fig.webm';
 
 function Projects() {
   return (
@@ -20,8 +27,9 @@ function Projects() {
                 An app for my locality to view latest news, weather, get daily bible verses and be able to make announcements.
                 <a href='https://github.com/inkevine/masizi_app'> Link to github repository</a>
               </p>
-              <video className="w-100 rounded" controls>
-                <source src={masizi} type="video/mp4" />
+              <video className="w-100 rounded" controls preload="none">
+                <source src={masiziWebm} type="video/webm" />
+                <source src={masiziMp4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -36,8 +44,9 @@ function Projects() {
                 Enter your mood, and it will provide a video, quote, and image that matches your emotions.
                 <a href='https://github.com/inkevine/Tyun'> Link to github repository</a>
               </p>
-              <video className="w-100 rounded" controls>
-                <source src={tyun} type="video/mp4" />
+              <video className="w-100 rounded" controls preload="none">
+                <source src={tyunWebm} type="video/webm" />
+                <source src={tyunMp4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -51,8 +60,9 @@ function Projects() {
               <p className="card-text text-secondary">
                 UI for TekaDrop, a food delivery app that lets customers order dishes and have them delivered quickly.
               </p>
-              <video className="w-100 rounded" controls>
-                <source src={td} type="video/mp4" />
+              <video className="w-100 rounded" controls preload="none">
+                <source src={tdWebm} type="video/webm" />
+                <source src={tdMp4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -66,8 +76,9 @@ function Projects() {
               <p className="card-text text-secondary">
                 Prototyping skills, showing smooth animations and transitions.
               </p>
-              <video className="w-100 rounded" controls>
-                <source src={fig} type="video/mp4" />
+              <video className="w-100 rounded" controls preload="none">
+                <source src={figWebm} type="video/webm" />
+                <source src={figMp4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
