@@ -1,0 +1,97 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* Custom CSS */
+.nav-link {
+  text-decoration: none;  /* Ensure there's no underline by default */
+}
+
+.nav-link:hover,.pro {
+  text-decoration: underline;  /* Add underline on hover */
+  text-decoration-color: #2A77B6;  /* Blue color for the underline */
+  text-decoration-thickness: 5px;  /* Increase the thickness of the underline */
+  text-underline-offset: 10px;  /* Blue color for the underline */
+  
+}
+
+/* App.css or your custom CSS file */
+.custom-button {
+  background-color: #2A77B6;  /* Custom blue color */    /* Border color to match the button */
+  color: white;               /* Text color */
+}
+
+.custom-button:hover {
+  background-color: #1b5789;  /* Darker blue on hover */
+  
+  color: white;       /* Darker blue border on hover */
+}
+.name{
+  color: #2A77B6; 
+}
+.heroo{
+  background-color: #ededed;
+  position: relative;
+}
+.cust-color{
+  background-color: #1b5789;
+  color: white; 
+}
+
+.pro{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.sc:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.anim{
+  box-shadow: 0 0 20px #2A77B6, 0 0 40px #1b5789;
+  animation: glow-border 1.5s infinite alternate;
+}
+
+.type-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid black;
+  animation: 
+    typing 2s steps(15) forwards,
+    blink 0.5s step-end 4,
+    hide-cursor 0.1s ease 2.5s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 23.5rem; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: black; }
+  50% { border-color: transparent; }
+}
+
+@keyframes hide-cursor {
+  to { border-right: none; }
+}
+
+.last{
+  border-top: 2px solid #1b5789;
+}
+
+.sc {
+  transition: transform 0.3s ease;
+}
+
+.sc:hover {
+  transform: translateY(-5px);
+}
+
+.skills-spacer {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .skills-spacer {
+    height: 500px; /* More space when skills stack */
+  }
+}
